@@ -11,7 +11,11 @@ app.use(express.json());
 app.use(cookieParser());
 app.use(
   cors({
-    origin: ["http://localhost:3000", ""],
+    origin: [
+      "http://localhost:3000",
+      "https://www.uqeshop.com",
+      "https://uqe.vercel.app",
+    ],
     credentials: true,
   })
 );
@@ -21,7 +25,7 @@ app.use("/api", router);
 
 app.get("/", (req: Request, res: Response) => {
   res.status(200).json({
-    message: "Entry to GlarionX server",
+    message: "Entry to uqe secure server",
   });
 });
 

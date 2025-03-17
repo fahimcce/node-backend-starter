@@ -56,7 +56,6 @@ const login = async (payload: Tlogin) => {
     {
       email: payload.email,
       role: userData.role,
-      id: userData._id,
     },
     config.jwt_access_token as Secret,
     config.jwt_expires_in as string
@@ -66,7 +65,6 @@ const login = async (payload: Tlogin) => {
     {
       email: payload.email,
       role: userData.role,
-      id: userData._id,
     },
     config.jwt_refresh_token as Secret,
     config.jwt_refresh_expires_in as string
