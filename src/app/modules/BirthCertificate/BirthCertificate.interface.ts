@@ -1,0 +1,20 @@
+export type TBirthCertificate = {
+  birthRegNo: string;
+  dateOfBirth: string;
+  dateOfRegistration: string;
+  dateOfIssuance: string;
+  qrCode: string;
+  nameEn: string;
+  nameBn: string;
+  sex: "Male" | "Female" | "Other";
+  fatherNameEn: string;
+  fatherNameBn: string;
+  motherNameEn: string;
+  motherNameBn: string;
+  address1: string;
+  address2: string;
+  placeOfBirthEn: string;
+  permanentAddressEn: string;
+  fatherNationalityEn: string;
+  motherNationalityEn: string;
+};
